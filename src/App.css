@@ -7,7 +7,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'MonoFont';
 }
 body{
     font-family: 'Monofont', Helvetica, sans-serif;
@@ -21,4 +21,30 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.LeftLine{
+    position: absolute;
+    /* bottom: 3%; */
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 4;
+    background-image: linear-gradient(to top, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: left;
+}
+
+.RightLine{
+    position: absolute;
+    /* bottom: 3%; */
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 4;
+    background-image: linear-gradient(to top, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: right;
 }
