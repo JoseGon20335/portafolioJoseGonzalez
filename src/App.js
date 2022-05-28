@@ -1,5 +1,4 @@
-import React, {useState } from 'react';
-import operacion from './operaciones';
+import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
@@ -7,7 +6,9 @@ const App = () => {
   
 
   return (
-    
+    <div>
+      <p>HOLA</p>
+    </div>
   );
 }
 
