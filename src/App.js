@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
 import BotPart from './component/bot';
+import TotPart from './component/top';
+import BodyPart from './component/body';
 
 const App = () => {
 
   return (
     <div>
-      <p>HOLA</p>
+      <TotPart/>
+      <BodyPart/>
       <BotPart/>
     </div>
   );

@@ -2,12 +2,8 @@
     font-family: 'MonoFont';
     src:  url('./monofont.ttf')
 }
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'MonoFont';
+html {
+    height: 10px;
 }
 body{
     font-family: 'Monofont', Helvetica, sans-serif;
@@ -23,28 +19,80 @@ body{
     width: 100%;
 }
 
-.LeftLine{
-    position: absolute;
-    /* bottom: 3%; */
-    width: 30%;
+.top{
+    display: flex;
+    width: 93%;
+    margin-left: 3%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    flex: 3;
     display: flex;
     flex-flow: row nowrap;
+    border-top: 2px solid;
+    margin-top: 15px;
+    flex: 5;
+}
+
+.topLeftLine{
     flex: 4;
-    background-image: linear-gradient(to top, #19FF81, transparent);
+    background-image: linear-gradient(to bottom left, #19FF81, transparent);
     background-repeat: no-repeat;
     background-size: 3px 5vh;
     background-position: left;
 }
 
-.RightLine{
-    position: absolute;
-    /* bottom: 3%; */
-    width: 30%;
-    display: flex;
-    flex-flow: row nowrap;
+.topRightLine{
     flex: 4;
-    background-image: linear-gradient(to top, #19FF81, transparent);
+    background-image: linear-gradient(to bottom right, #19FF81, transparent);
     background-repeat: no-repeat;
     background-size: 3px 5vh;
     background-position: right;
+}
+
+
+.bot{
+    position: absolute;
+    bottom: 3%;
+    width: 93%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 2px solid;
+    margin-bottom: 15px;
+    margin-left: 3%;
+}
+
+.botLeftLine{
+    flex: 4;
+    background-image: linear-gradient(to top left, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: left;
+}
+
+.botRightLine{
+    flex: 4;
+    background-image: linear-gradient(to top right, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: right;
+}
+
+.buttonContainer>button{
+    padding: 0 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: 2px solid;
+    background: transparent;
+    border-color: #19FF81;
+    border-width: 4px;
+    outline: none;
+    width: 5%;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
 }
