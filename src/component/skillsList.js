@@ -1,4 +1,4 @@
-export const emote_list = [
+export const skill_list = [
     {
       key: 'React',
       img: 'ESTO ES UNA IMAGEN',
