@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-const BotPart = () => {
+const BotPart = ({ setOption }) => {
 
   const handleClick = (e) => {
     if(e.target.name == 'Skills'){
       console.log("Skills")
+      // setOption("Skills")
+      setOption((prevOption) => prevOption = 'Skills')
     } else if(e.target.name == 'Projects'){
       console.log("Projects")
+      // setOption("Projects")
+      setOption((prevOption) => prevOption = 'Projects')
     } else if(e.target.name == 'Me'){
       console.log("Me")
+      // setOption("Me")
+      setOption((prevOption) => prevOption = 'Me')
     } else if(e.target.name == 'Links'){
       console.log("Links")
+      // setOption("Links")
+      setOption((prevOption) => prevOption = 'Links')
     }
   }
 

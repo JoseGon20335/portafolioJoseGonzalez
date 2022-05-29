@@ -6,11 +6,13 @@ import BodyPart from './component/body';
 
 const App = () => {
 
+  const [option, setOption] = useState("Links")
+
   return (
     <div>
       <TotPart/>
-      <BodyPart/>
-      <BotPart/>
+      <BodyPart option = {option}/>
+      <BotPart setOption = {setOption}/>
     </div>
   );
 

@@ -6,7 +6,6 @@ const TotPart = () => {
   return (
     <div className='top'>
       <div className="topLeftLine"></div>
-        <button>botones</button>
       <div className="topRightLine"></div>
     </div>
   );
