@@ -1,76 +1,184 @@
+@font-face {
+    font-family: 'MonoFont';
+    src:  url('./monofont.ttf')
+}
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Monofont', Helvetica, sans-serif;
+    color: #19FF81;
+    font-size: 2vw;
+}
+html {
+    height: 10px;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200530/pngtree-cute-hand-drawn-style-math-education-plaid-background-image_337365.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
-
-.calcu{
-    margin-top: 10%;
-    margin-left: 50%;
-    position: absolute;
-    transform: translate(-45%,-50%);
-    margin: 0 auto;
-    width: 30%;
-    text-align: center;
-    border: 10px solid;
+    font-family: 'Monofont', Helvetica, sans-serif;
+    height:100%;
+    font-size: 2vw;
+    color: #19FF81;
     background-color: black;
-    border-radius: 7px;
+    background-image: radial-gradient(#11581E, #041607);
 }
-input{
-    height: 50px;
+#app{
+    position: absolute;
+    height: 100%;
     width: 100%;
-    background-color: rgb(30, 30, 30);
-    border: 0px;
+}
+
+.top{
+    display: flex;
+    width: 95%;
+    margin-left: 2%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 2px solid;
+    margin-top: 15px;
+    flex: 5;
+}
+
+.topLeftLine{
+    flex: 4;
+    background-image: linear-gradient(to bottom left, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: left;
+}
+
+.topRightLine{
+    flex: 4;
+    background-image: linear-gradient(to bottom right, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: right;
+}
+
+
+.bot{
+    position: absolute;
+    bottom: 3%;
+    width: 93%;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 2px solid;
+    margin-bottom: 15px;
+    margin-left: 3%;
+}
+
+.botLeftLine{
+    flex: 4;
+    background-image: linear-gradient(to top left, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: left;
+}
+
+.botRightLine{
+    flex: 4;
+    background-image: linear-gradient(to top right, #19FF81, transparent);
+    background-repeat: no-repeat;
+    background-size: 3px 5vh;
+    background-position: right;
+}
+
+.buttonContainer>button{
+    padding: 0 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: 2px solid;
+    background: transparent;
+    border-color: #19FF81;
+    border-width: 4px;
+    outline: none;
+    width: 5%;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.listSkills{
+    flex: 11;
+}
+
+.descContent{
+    flex: 12;
+    margin: 15px;
+}
+.title {
+    font-size: 1.6em;
+}
+.value {
+    font-size: 2.5em;
+}
+.description{
+    display: flex;
+    width: 95%;
+    margin-left: 2%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 2px solid;
+    margin-top: 15px;
+    flex: 5;
+}
+.description>p{
+    width: 90%;
+}
+
+.contentSkills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.listSkills{
+    padding: 0 15px;
+    margin-top: 15px;
+    list-style: none;
+    margin-left: 3%;
+}
+.listSkillsButton>button{
+    padding: 2%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
     text-align: left;
-    font-size: 90%;
-    font-weight: 700;
-    color: white;
+}
+.listSkillsButton:hover{
+    list-style: none;
+    cursor: pointer;
+    outline: 2px solid;
+    background: fade(#19FF81, 20%);
+}
+.imageDesc{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+.imageDesc>img{
+    margin-left: 35%;
+    width: 30%;
+    height: 30%;
+}
+.title{
+    text-align: center;
+}
+.title>p{
+    font-size: 3vw;
 }
 
-.teclado{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(60px, auto);
-}
-
-.boton{
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
-}
-
-.especial{
-    background-color: steelblue;
-    margin: 5px;
-    border: none;
-    grid-column: 1/3;
-    grid-row: 1;
-    border-radius: 10px;
-}
-.especial2{
-    background-color: steelblue;
-    margin: 5px;
-    border: none;
-    grid-row: 6;
-    grid-column: 1/5;
-    border-radius: 10px;
-}
-
-.botonColorido{
-    background-color: steelblue;
-    margin: 5px;
-    border: none;
-    border-radius: 10px;
+.projectContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
