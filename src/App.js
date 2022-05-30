@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import BotPart from './component/bot';
-import TotPart from './component/top';
-import BodyPart from './component/body';
+import BotPart from './component/bot.js';
+import TotPart from './component/top.js';
+import BodyPart from './component/body.js';
 
 const App = () => {
 
