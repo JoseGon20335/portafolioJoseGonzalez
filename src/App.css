@@ -188,9 +188,15 @@ body{
     align-self: center;
     bottom: 15%;
 }
+
+.leftArrow{
+    cursor: pointer;
+}
 .rigthArrow{
     transform: rotate(-180deg);
+    cursor: pointer;
 }
+
 .caja{
     outline: 2px solid;
     background: fade(#19FF81, 20%);
@@ -215,6 +221,14 @@ body{
     width: 50%;
     height: 100%;
 }
+.cajaLeft>p{
+    font-size: 3.5vw;
+}
+.cajaLeft>img{
+    /* margin-left: 15%; */
+    width: 40%;
+    height: 40%;
+}
 
 .cajasPro{
     display: flex;
@@ -227,14 +241,6 @@ body{
     width: 60%;
     text-align: left;
     outline: 2px solid;
-    /* background-color: transparent; */
-    background-color: #19FF81;
+    background-color: #19ff806e;
     opacity: 0.5;
 }
-/* 
-.Time{
-    outline: 2px solid;
-    background: fade(#19FF81, 20%);
-    width: 80%;
-    height: 10%;
-} */
