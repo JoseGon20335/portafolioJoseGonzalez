@@ -181,4 +181,60 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    align-items: center;
+    align-self: center;
+    bottom: 15%;
 }
+.rigthArrow{
+    transform: rotate(-180deg);
+}
+.caja{
+    outline: 2px solid;
+    background: fade(#19FF81, 20%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.cajaRight{
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.cajaRight>p{
+    margin-bottom: 17%;
+}
+.cajaLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.cajasPro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomCube{
+    margin-bottom: 5%;
+    width: 60%;
+    text-align: left;
+    outline: 2px solid;
+    /* background-color: transparent; */
+    background-color: #19FF81;
+    opacity: 0.5;
+}
+/* 
+.Time{
+    outline: 2px solid;
+    background: fade(#19FF81, 20%);
+    width: 80%;
+    height: 10%;
+} */
