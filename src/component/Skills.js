@@ -4,15 +4,16 @@ import { skill_list } from './skillsList';
 
 const SkillsPart = () => {
 
-  const [image, setImage] = useState("");
-  const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [image, setImage] = useState(skill_list[0].img);
+  const [title, setTitle] = useState(skill_list[0].key);
+  const [desc, setDesc] = useState(skill_list[0].des);
 
   const clickHandler = (e) => {
 
     skill_list.forEach(element => {
       console.log(element.key,"----",e.target.name)
       if(element.key == e.target.name){
+        console.log(element.img)
         setTitle(element.key);
         setImage(element.img);
         setDesc(element.des);
@@ -34,13 +35,15 @@ const SkillsPart = () => {
       </div>
       <div className='descContent'>
         <div className='title'>
-          <h3>{title}</h3>
+          <p>{title}</p>
         </div>
         <div className='imageDesc'>
-          <p>{image}</p>
+          <img src={image}/>
         </div>
         <div className='description'>
+          <div className="topLeftLine"></div>
           <p>{desc}</p>
+          <div className="topRightLine"></div>
         </div>
       </div>
     </div>

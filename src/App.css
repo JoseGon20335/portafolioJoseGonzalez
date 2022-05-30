@@ -2,6 +2,11 @@
     font-family: 'MonoFont';
     src:  url('./monofont.ttf')
 }
+*{
+    font-family: 'Monofont', Helvetica, sans-serif;
+    color: #19FF81;
+    font-size: 2vw;
+}
 html {
     height: 10px;
 }
@@ -21,11 +26,10 @@ body{
 
 .top{
     display: flex;
-    width: 93%;
-    margin-left: 3%;
+    width: 95%;
+    margin-left: 2%;
     flex-flow: row nowrap;
     justify-content: space-around;
-    flex: 3;
     display: flex;
     flex-flow: row nowrap;
     border-top: 2px solid;
@@ -112,47 +116,69 @@ body{
     font-size: 2.5em;
 }
 .description{
+    display: flex;
+    width: 95%;
+    margin-left: 2%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
     border-top: 2px solid;
-    background-image: linear-gradient(to bottom, #19FF81, transparent);
-    background-repeat: no-repeat;
-    background-size: 3px 5vh;
-    background-position: left;
-    background-position: 100% 0%;
-    position: absolute;
-    bottom: 17%;
-    width: 48%;
+    margin-top: 15px;
+    flex: 5;
+}
+.description>p{
+    width: 90%;
 }
 
 .contentSkills{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
 }
 
 .listSkills{
     padding: 0 15px;
     margin-top: 15px;
     list-style: none;
+    margin-left: 3%;
 }
-.listSkills>button{
-    padding: 0 15px;
-    margin-top: 15px;
+.listSkillsButton>button{
+    padding: 2%;
     cursor: pointer;
-    outline: 2px solid;
     background: transparent;
-    border-color: #19FF81;
-    border-width: 4px;
+    border: none;
     outline: none;
-    width: 5%;
+    width: 100%;
+    text-align: left;
 }
 .listSkillsButton:hover{
-    padding: 0 15px;
-    margin-top: 15px;
     list-style: none;
-}
-.listSkillsButton:hover{
     cursor: pointer;
     outline: 2px solid;
     background: fade(#19FF81, 20%);
+}
+.imageDesc{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+.imageDesc>img{
+    margin-left: 35%;
+    width: 30%;
+    height: 30%;
+}
+.title{
+    text-align: center;
+}
+.title>p{
+    font-size: 3vw;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
