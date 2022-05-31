@@ -186,7 +186,6 @@ body{
     margin-left: 5%;
     align-items: center;
     align-self: center;
-    bottom: 15%;
 }
 
 .leftArrow{
@@ -199,12 +198,13 @@ body{
 
 .caja{
     outline: 2px solid;
-    background: fade(#19FF81, 20%);
+    background: #19ff801e;
     display: flex;
+    /* position: fixed; */
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
 }
 .cajaRight{
     align-items: center;
@@ -212,6 +212,8 @@ body{
     height: 100%;
 }
 .cajaRight>p{
+    width: 100%;
+    height: 200px;
     margin-bottom: 17%;
 }
 .cajaLeft{
@@ -243,4 +245,58 @@ body{
     outline: 2px solid;
     background-color: #19ff806e;
     opacity: 0.5;
+}
+
+.pip{
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    margin-left: 45%;
+    align-items: center;
+    align-self: center;
+}
+
+.vaultboy{
+    background:url('https://pipboy.iat1984.com/img/vault_boy_walking.gif');
+    background-size:20%;
+    /* background-position:2px; */
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-repeat: no-repeat;
+}
+.bar1,.bar2,.bar3,.bar4,.bar5,.bar6{
+      width:8%;
+      height:2%;
+      background:#64d515;
+      position:absolute;
+}
+.bar1{
+    left:32px;
+    top:-8px;
+}
+.bar2{
+    left:32px;
+    bottom:-8px;
+    background:none;
+    border:1px solid #64d515;
+    height:1.5px;
+}
+.bar3{
+    left:-20px;
+    top:32px;
+}
+.bar4{
+    right:-20px;
+    top:32px;
+}
+.bar5{
+    left:-20px;
+    top:82px;
+}
+.bar6{
+    right:-20px;
+    top:82px;
 }
