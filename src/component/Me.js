@@ -8,6 +8,8 @@ import shield from '../image/shield.svg';
 import rad from '../image/rad.svg';
 import energy from '../image/energy.svg';
 import { skill_list } from './skillsList';
+import { PerkList } from './PerkList';
+import yo from '../image/yo.svg'
 
 const MePart = () => {
 
@@ -67,12 +69,12 @@ const MePart = () => {
             <p>Vault 21 - ID143</p>
           </div>
           <div className='imageDescMe'>
-            <img src={image}/>
+            <img src={yo}/>
           </div>
         </div>
         <div className='descriptionMe'>
           <div className="topLeftLine"></div>
-            <p>Esto es un texto de ejemplo</p>
+            <p>Jose Miguel Gonzalez, equipo de reconocimiento de bugs en el refugio 21. 20 ciclos solares de vida, Guatemalteco. Estudiante de ingenieria en ciencias de la computacion y la tecnologia. Apasionado de los videojuegos, jugarlos y desarrollarlos. Siempre tratando de mejorar por que nadie nace sabiendo. Siempre buscando compartir con las personas a su alrededor si considera que son buenas personas.</p>
           <div className="topRightLine"></div>
         </div>
       </div>

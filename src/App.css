@@ -472,13 +472,14 @@ body{
     display: flex;
     align-items: center;
     align-self: center;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    background-color: #19ff802b;
 }
 .imageDescMe>img{
-    margin-left: 15%;
-    width: 70%;
-    height: 70%;
+    margin-left: 8%;
+    width: 76%;
+    height: 100%;
 }
 
 .descriptionMe{
