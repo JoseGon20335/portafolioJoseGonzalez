@@ -504,3 +504,16 @@ body{
 .titleMe>p{
     font-size: 3vw;
 }
+
+.starsPerk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+    height: 10%;
+}
+.starsPerk>img{
+    margin-left: 5%;
+    width: 30%;
+    height: 30%;
+}

@@ -7,28 +7,137 @@ import helmet from '../image/helmet.svg';
 import shield from '../image/shield.svg';
 import rad from '../image/rad.svg';
 import energy from '../image/energy.svg';
-import { skill_list } from './skillsList';
 import { PerkList } from './PerkList';
 import yo from '../image/yo.svg'
+
+import star1 from '../image/star1.svg'
+import star2 from '../image/star2.svg'
+import star0 from '../image/star0.svg'
 
 const MePart = () => {
 
   const [op, setOp] = useState("mySelf");
 
-  const [image, setImage] = useState(skill_list[0].img);
-  const [title, setTitle] = useState(skill_list[0].key);
-  const [desc, setDesc] = useState(skill_list[0].des);
+  const [image, setImage] = useState(PerkList[0].img);
+  const [title, setTitle] = useState(PerkList[0].key);
+  const [desc, setDesc] = useState(PerkList[0].des);
+  const [actual1, setActual1] = useState(PerkList[0].stars1.n1);
+  const [actual2, setActual2] = useState(PerkList[0].stars1.n2);
+  const [actual3, setActual3] = useState(PerkList[0].stars1.n3);
+  const [actual4, setActual4] = useState(PerkList[0].stars1.n4);
+  const [actual5, setActual5] = useState(PerkList[0].stars1.n5);
 
   const clickHandler = (e) => {
-    skill_list.forEach(element => {
+    PerkList.forEach(element => {
       console.log(element.key,"----",e.target.name)
       if(element.key == e.target.name){
         console.log(element.img)
         setTitle(element.key);
         setImage(element.img);
         setDesc(element.des);
+        setActual1(element.stars1.n1);
+        setActual2(element.stars1.n2);
+        setActual3(element.stars1.n3);
+        setActual4(element.stars1.n4);
+        setActual5(element.stars1.n5);
       }
     });
+  }
+
+  const StarF1 = () => {
+    console.log("F1",actual1)
+    if(actual1 == 1){
+      console.log("F1")
+      return(
+        <img src={star1}/>
+      )
+    } else if(actual1 == 2){
+      console.log("F2")
+      return(
+        <img src={star2}/>
+      )
+    } else if(actual1 == 0){
+      console.log("F0")
+      return(
+        <img src={star0}/>
+      )
+    }
+  }
+  const StarF2 = () => {
+    console.log("F2",actual2)
+    if(actual2 == 1){
+      console.log("F1")
+      return(
+        <img src={star1}/>
+      )
+    } else if(actual2 == 2){
+      console.log("F2")
+      return(
+        <img src={star2}/>
+      )
+    } else if(actual2 == 0){
+      console.log("F0")
+      return(
+        <img src={star0}/>
+      )
+    }
+  }
+  const StarF3 = () => {
+    console.log("F3",actual3)
+    if(actual3 == 1){
+      console.log("F1")
+      return(
+        <img src={star1}/>
+      )
+    } else if(actual3 == 2){
+      console.log("F2")
+      return(
+        <img src={star2}/>
+      )
+    } else if(actual3 == 0){
+      console.log("F0")
+      return(
+        <img src={star0}/>
+      )
+    }
+  }
+  const StarF4 = () => {
+    console.log("F4",actual4)
+    if(actual4 == 1){
+      console.log("F1")
+      return(
+        <img src={star1}/>
+      )
+    } else if(actual4 == 2){
+      console.log("F2")
+      return(
+        <img src={star2}/>
+      )
+    } else if(actual4 == 0){
+      console.log("F0")
+      return(
+        <img src={star0}/>
+      )
+    }
+  }
+  const StarF5 = () => {
+    console.log("F5",actual5)
+    if(actual5 == 1){
+      console.log("F1")
+      return(
+        <img src={star1}/>
+      )
+    } else if(actual5 == 2){
+      console.log("F2")
+      return(
+        <img src={star2}/>
+      )
+    } else if(actual5 == 0){
+      console.log("F0")
+      return(
+        <img src={star0}/>
+      )
+    }
   }
 
   const Perks = () => {
@@ -36,7 +145,7 @@ const MePart = () => {
       <div className='contentPerks'>
         <div className='listPerks'>
           {
-            skill_list.map((object) => (
+            PerkList.map((object) => (
               <div className='listPerksButton' key={object.key}>
                 <button name={object.key} onClick={clickHandler}>{object.key}</button>
               </div>
@@ -49,6 +158,17 @@ const MePart = () => {
           </div>
           <div className='imageDesc'>
             <img src={image}/>
+          </div>
+          <div>
+            {
+              <div className='starsPerk'>
+                <StarF1/>
+                <StarF2/>
+                <StarF3/>
+                <StarF4/>
+                <StarF5/>
+              </div>
+            }
           </div>
           <div className='description'>
             <div className="topLeftLine"></div>
