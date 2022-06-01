@@ -181,4 +181,326 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    align-items: center;
+    align-self: center;
+}
+
+.leftArrow{
+    cursor: pointer;
+}
+.rigthArrow{
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+
+.caja{
+    outline: 2px solid;
+    background: #19ff801e;
+    display: flex;
+    /* position: fixed; */
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+}
+.cajaRight{
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.cajaRight>p{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 17%;
+}
+.cajaLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.cajaLeft>p{
+    font-size: 3.5vw;
+}
+.cajaLeft>img{
+    /* margin-left: 15%; */
+    width: 40%;
+    height: 40%;
+}
+
+.cajasPro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomCube{
+    margin-bottom: 5%;
+    width: 60%;
+    text-align: left;
+    outline: 2px solid;
+    background-color: #19ff806e;
+    opacity: 0.5;
+}
+
+.pip{
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    margin-left: 5%;
+    align-items: center;
+    align-self: center;
+    top: 3%;
+}
+
+.vaultboy{
+    background:url('https://pipboy.iat1984.com/img/vault_boy_walking.gif');
+    background-size:25%;
+    /* background-position:2px; */
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-repeat: no-repeat;
+    top: 25%;
+    left: 30%;
+}
+.bar1,.bar2,.bar3,.bar4,.bar5,.bar6{
+      width:8%;
+      height:10px;
+      background:#64d515;
+      position:absolute;
+}
+.bar1{
+    top:-8%;
+    left: 8%;
+}
+.bar2{
+    top: 60%;
+    left: 8%;
+}
+.bar3{
+    top:15%;
+    left: -6%;
+}
+.bar4{
+    top:35%;
+    left: -6%;
+}
+.bar5{
+    top:35%;
+    left: 22%;
+}
+.bar6{
+    top:15%;
+    left: 22%;
+}
+
+.statsMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 60%;
+    height: 23%;
+}
+.gun{
+    background-color: #11581ee2;
+    height: 100%;
+    width: 15%;
+    margin-left: 10%;
+}
+.gun>img{
+    width: 85%;
+    height: 85%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.aim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11581ee2;
+    height: 100%;
+    width: 5%;
+    margin-left: 10px;
+}
+.aim>img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.helmet{
+    background-color: #11581ee2;
+    height: 100%;
+    width: 15%;
+    margin-left: 10%;
+}
+.helmet>img{
+    width: 85%;
+    height: 85%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.shield{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11581ee2;
+    height: 100%;
+    width: 5%;
+    margin-left: 10px;
+}
+.shield>img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+}
+.rad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11581ee2;
+    height: 100%;
+    width: 5%;
+    margin-left: 10px;
+}
+.rad>img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+}
+.energy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11581ee2;
+    height: 100%;
+    width: 5%;
+    margin-left: 10px;
+}
+.energy>img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.MeOptions{
+    display: flex;
+    flex-direction: row;
+}
+.MeAsk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    margin-left: 5%;
+}
+.MeAsk>button{
+    padding: 2%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 5%;
+}
+.MeAsk>button:hover{
+    list-style: none;
+    cursor: pointer;
+    outline: 2px solid;
+    background: #19ff8086;
+}
+
+.regresador{
+    height: 100%;
+    width: 70%;
+}
+
+.contentPerks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.listPerks{
+    padding: 0 15px;
+    margin-top: 15px;
+    list-style: none;
+    margin-left: 3%;
+}
+.listPerksButton>button{
+    padding: 2%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+}
+.listPerksButton:hover{
+    list-style: none;
+    cursor: pointer;
+    outline: 2px solid;
+    background: fade(#19FF81, 20%);
+}
+
+.contentMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.leftAboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.imageDescMe{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    background-color: #19ff802b;
+}
+.imageDescMe>img{
+    margin-left: 8%;
+    width: 76%;
+    height: 100%;
+}
+
+.descriptionMe{
+    display: flex;
+    width: 50%;
+    margin-left: 2%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 2px solid;
+    margin-top: 15px;
+    flex: 5;
+}
+.descriptionMe>p{
+    width: 90%;
+}
+
+.titleMe{
+    text-align: center;
+}
+.titleMe>p{
+    font-size: 3vw;
 }
