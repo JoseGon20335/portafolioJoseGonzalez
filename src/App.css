@@ -157,7 +157,7 @@ body{
     list-style: none;
     cursor: pointer;
     outline: 2px solid;
-    background: fade(#19FF81, 20%);
+    background: #19ff8091;
 }
 .imageDesc{
     display: flex;
@@ -527,4 +527,33 @@ body{
     background-repeat: no-repeat;
     top: 50%;
     right: -30%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 70%;
+    margin-left: 11%;
+}
+
+.git{
+    outline: 2px solid;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #19ff802b;
+    margin-left: 10%;
+}
+.git:hover{
+    background-color: #19ff8089;
+    cursor: pointer;
+}
+.git>img{
+    width: 100%;
+    height: 100%;
 }
