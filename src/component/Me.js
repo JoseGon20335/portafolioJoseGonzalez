@@ -237,6 +237,9 @@ const MePart = () => {
             <p>89</p>
           </div>
         </div>
+        <div className='Bienvenida'>
+          <p>Hola! Soy Jose Miguel Gonzalez desarrollador y te doy la bienvenida a mi portafolio.</p>
+        </div>
       </div>  
     );
   }

@@ -294,11 +294,11 @@ body{
 }
 .bar5{
     top:35%;
-    left: 22%;
+    left: 24%;
 }
 .bar6{
     top:15%;
-    left: 22%;
+    left: 24%;
 }
 
 .statsMe{
@@ -451,7 +451,7 @@ body{
     list-style: none;
     cursor: pointer;
     outline: 2px solid;
-    background: fade(#19FF81, 20%);
+    background: #19ff80a8;
 }
 
 .contentMe{
@@ -511,9 +511,20 @@ body{
     justify-content: space-between;
     width: 10%;
     height: 10%;
+    margin-left: 40%;
 }
 .starsPerk>img{
     margin-left: 5%;
     width: 30%;
     height: 30%;
+}
+
+.Bienvenida{
+    /* background-position:2px; */
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: -30%;
 }

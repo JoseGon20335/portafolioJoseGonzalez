@@ -6,7 +6,7 @@ import BodyPart from './component/body.js';
 
 const App = () => {
 
-  const [option, setOption] = useState("Links")
+  const [option, setOption] = useState("Me")
 
   return (
     <div>
