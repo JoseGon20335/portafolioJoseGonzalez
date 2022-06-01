@@ -84,13 +84,17 @@ body{
 .buttonContainer>button{
     padding: 0 15px;
     margin-top: 15px;
+    background: transparent;
+    outline: none;
+    width: 15%;
+    border: none;
+}
+
+.buttonContainer>button:hover{
     cursor: pointer;
     outline: 2px solid;
-    background: transparent;
-    border-color: #19FF81;
-    border-width: 4px;
-    outline: none;
-    width: 5%;
+    outline-color: #19FF81;
+    background: #19ff808a;
 }
 
 .buttonContainer{
