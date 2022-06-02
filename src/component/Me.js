@@ -14,6 +14,8 @@ import star1 from '../image/star1.svg'
 import star2 from '../image/star2.svg'
 import star0 from '../image/star0.svg'
 
+import pipboyImg from '../image/vaultboy.gif'
+
 const MePart = () => {
 
   const [op, setOp] = useState("mySelf");
@@ -204,13 +206,20 @@ const MePart = () => {
   const MySelf = () => {
     return (
       <div className='pip'>
-        <div className="vaultboy">
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-          <div className="bar4"></div>
-          <div className="bar5"></div>
-          <div className="bar6"></div>
+        <div className='healthPipBoy'>
+          <div className='leftHealthBars'>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+          </div>
+          <div className="vaultboy">
+            <div className="bar3"></div>
+            <img src={pipboyImg}/>
+            <div className="bar4"></div>
+          </div>
+          <div className='rightHealthBars'>
+            <div className="bar5"></div>
+            <div className="bar6"></div>
+          </div>
         </div>
         <div className='statsMe'>
           <div className='gun'>
@@ -237,9 +246,7 @@ const MePart = () => {
             <p>89</p>
           </div>
         </div>
-        <div className='Bienvenida'>
-          <p>Hola! Soy Jose Miguel Gonzalez desarrollador y te doy la bienvenida a mi portafolio.</p>
-        </div>
+        
       </div>  
     );
   }
