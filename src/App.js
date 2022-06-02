@@ -9,7 +9,7 @@ const App = () => {
   const [option, setOption] = useState("Me")
 
   return (
-    <div>
+    <div className='waveScreen'>
       <TotPart/>
       <BodyPart option = {option}/>
       <BotPart setOption = {setOption}/>
