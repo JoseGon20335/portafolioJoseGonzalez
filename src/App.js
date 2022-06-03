@@ -23,7 +23,7 @@ const App = () => {
       {
         loading?
         <div id="theVideo">
-          <video loop autoPlay muted width="640" height="480">
+          <video loop autoPlay muted width="100%" height="100%">
               <source src = {videoIntro} type='video/mp4'/>
           </video>
         </div>
