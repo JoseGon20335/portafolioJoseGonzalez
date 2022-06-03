@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import '../App.css';
+import soundE from '../audio/transicion.mp3'
 
 const BotPart = ({ setOption }) => {
 
+  const audio = new Audio(soundE);
+
   const handleClick = (e) => {
+    audio.play();
     if(e.target.name == 'Skills'){
       console.log("Skills")
       // setOption("Skills")

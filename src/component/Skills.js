@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { skill_list } from './skillsList';
+import soundE from '../audio/buttonSound.mp3'
 
 const SkillsPart = () => {
+
+  const audio = new Audio(soundE);
 
   const [image, setImage] = useState(skill_list[0].img);
   const [title, setTitle] = useState(skill_list[0].key);
   const [desc, setDesc] = useState(skill_list[0].des);
 
   const clickHandler = (e) => {
+
+    audio.play();
 
     skill_list.forEach(element => {
       console.log(element.key,"----",e.target.name)

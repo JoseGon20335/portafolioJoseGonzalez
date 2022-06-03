@@ -16,11 +16,15 @@ import star0 from '../image/star0.svg'
 
 import pipboyImg from '../image/vaultboy.gif'
 
+import soundE from '../audio/buttonSound.mp3'
+
 // import soundButton
 
 const MePart = () => {
 
   const [op, setOp] = useState("mySelf");
+
+  const audio = new Audio(soundE);
 
   const [image, setImage] = useState(PerkList[0].img);
   const [title, setTitle] = useState(PerkList[0].key);
@@ -31,10 +35,9 @@ const MePart = () => {
   const [actual4, setActual4] = useState(PerkList[0].stars1.n4);
   const [actual5, setActual5] = useState(PerkList[0].stars1.n5);
 
-  const audio = new Audio();
-
 
   const clickHandler = (e) => {
+    audio.play();
     PerkList.forEach(element => {
       console.log(element.key,"----",e.target.name)
       if(element.key == e.target.name){
@@ -257,6 +260,7 @@ const MePart = () => {
   }
 
   const clickHandlerOption = (e) => {
+    audio.play();
     if("Perks" == e.target.name){
       setOp("Perks")
     } else if("mySelf" == e.target.name){
