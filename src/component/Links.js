@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 import git from '../image/git.svg';
 import cv from '../image/cv.svg';

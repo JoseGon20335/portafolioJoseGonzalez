@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import '../App.css';
 import soundE from '../audio/transicion.mp3'
 
+// eslint-disable-next-line react/prop-types
 const BotPart = ({ setOption }) => {
 
   const audio = new Audio(soundE);
