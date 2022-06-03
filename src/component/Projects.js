@@ -3,8 +3,11 @@ import '../App.css';
 import arrow from '../image/arrow.svg';
 import lg from '../image/roku.svg';
 import { project_list } from './projectList';
+import soundE from '../audio/buttonSound.mp3'
 
 const ProjectPart = () => {
+
+  const audio = new Audio(soundE);
 
   const [k, setK] = useState(0);
   const [title, setTitle] = useState(project_list[k].name);
@@ -15,7 +18,7 @@ const ProjectPart = () => {
   const [habi, setHabi] = useState(project_list[k].habilidades);
 
   const clickHandler = e => {
-
+    audio.play();
     let largo = project_list.length;
     
     let val = k;
