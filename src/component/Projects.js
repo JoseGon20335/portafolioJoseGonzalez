@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
 import arrow from '../image/arrow.svg';
-import lg from '../image/roku.svg';
 import { project_list } from './projectList';
 import soundE from '../audio/buttonSound.mp3'
 

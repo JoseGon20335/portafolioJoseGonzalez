@@ -1,13 +1,6 @@
 import num1 from '../image/react.svg';
 import num2 from '../image/angular.svg';
 import num10 from '../image/roku.svg';
-import num3 from '../image/javas.svg';
-import num4 from '../image/java.svg';
-import num5 from '../image/py.svg';
-import num6 from '../image/css.svg';
-import num7 from '../image/unity.svg';
-import num8 from '../image/android.svg';
-import num9 from '../image/lg.svg';
 
 export const project_list = [
     {

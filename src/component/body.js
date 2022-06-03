@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 import SkillsPart from './Skills';
 import ProjectPart from './Projects';
 import MePart from './Me';
 import LinksPart from './Links';
 
+// eslint-disable-next-line react/prop-types
 const BodyPart = ({ option }) => {
 
   const OptionShow = () => {
