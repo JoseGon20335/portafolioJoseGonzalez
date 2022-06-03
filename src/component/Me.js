@@ -18,7 +18,6 @@ import pipboyImg from '../image/vaultboy.gif'
 
 import soundE from '../audio/buttonSound.mp3'
 
-// import soundButton
 
 const MePart = () => {
 
@@ -182,7 +181,7 @@ const MePart = () => {
           </div>
           <div className='description'>
             <div className="topLeftLine"></div>
-            <p>{desc}</p>
+              <p>{desc}</p>
             <div className="topRightLine"></div>
           </div>
         </div>
