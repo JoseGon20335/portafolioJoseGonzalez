@@ -11,7 +11,7 @@ const LinksPart = () => {
   const CVLink = () => {
     console.log("entro")
     saveAs(
-      "https://drive.google.com/file/d/1ABHuwQw_aA7CsIUeeVjf5O3uVuXIefBW/view?usp=sharing",
+      "https://drive.google.com/file/d/1sTIs9PomPOoQRKz2o46F5w9mi6htE1SP/view?usp=sharing",
       "JoseGonzalezCV.pdf"
     );
   }

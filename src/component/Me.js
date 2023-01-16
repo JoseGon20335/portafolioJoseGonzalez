@@ -234,7 +234,7 @@ const MePart = () => {
           </div>
           <div className='aim'>
             <img src={aim}/>
-            <p>89</p>
+            <p>85</p>
           </div>
 
           <div className='helmet'>
@@ -242,15 +242,15 @@ const MePart = () => {
           </div>
           <div className='shield'>
             <img src={shield}/>
-            <p>89</p>
+            <p>99</p>
           </div>
           <div className='rad'>
             <img src={rad}/>
-            <p>89</p>
+            <p>94</p>
           </div>
           <div className='energy'>
             <img src={energy}/>
-            <p>89</p>
+            <p>85</p>
           </div>
         </div>
         
